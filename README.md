@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Client-Auth-Lite
 
-## Getting Started
+A simple client-side authentication system built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **shadcn** library.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Login page with **Iranian mobile number** validation  
+  - Valid formats: `09xxxxxxxxx`, `+989xxxxxxxxx`, `00989xxxxxxxxx`  
+- Fetch random user data from `https://randomuser.me/api/`  
+- Store user data in **localStorage**  
+- Dashboard page showing **user info** (name, email, profile picture)  
+- Logout button clears user session  
+- Fully **responsive design**  
+- Clean UI using **Tailwind CSS** and **shadcn components**  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation & Development
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone <YOUR_GITHUB_REPO_URL>
+   cd client-auth-lite
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   npm install
+
+
+3. Run the development server: 
+   
+   npm run dev
+
+4. Open [http://localhost:3000](http://localhost:3000)with your browser to see the result  
+
+
+5. Project Structure:
+
+   client-auth-lite/
+├─ app/
+│  ├─ dashboard/
+│  │  └─ page.tsx       # Dashboard page
+│  ├─ login/
+│  │  └─ page.tsx       # Login page
+│  └─ layout.tsx        # Global layout
+├─ components/          # UI components (Input, Button, etc.)
+├─ lib/                 # Utility functions (validators)
+├─ public/              # Static assets (images, favicon)
+├─ styles/              # Global styles (Tailwind)
+├─ package.json
+└─ README.md
+
+6. Technical Details:
+
+  Framework: Next.js (App Router)
+
+  Language: TypeScript
+
+  Styling: Tailwind CSS
+
+  Components: shadcn library (Button, Input, etc.)
+
+  Client-side storage: localStorage
+
+  API: https://randomuser.me/api/
+
+
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
