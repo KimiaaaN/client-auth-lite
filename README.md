@@ -25,35 +25,35 @@ A simple client-side authentication system built with **Next.js**, **TypeScript*
    cd client-auth-lite
 
 2. Install dependencies:
-
+   ```
    npm install
 
 
 3. Run the development server: 
-   
+   ```  
    npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000)with your browser to see the result  
 
 
 5. Project Structure:
-
+   ```
    client-auth-lite/
-├─ app/
-│  ├─ dashboard/
-│  │  └─ page.tsx       # Dashboard page
-│  ├─ login/
-│  │  └─ page.tsx       # Login page
-│  └─ layout.tsx        # Global layout
-├─ components/          # UI components (Input, Button, etc.)
-├─ lib/                 # Utility functions (validators)
-├─ public/              # Static assets (images, favicon)
-├─ styles/              # Global styles (Tailwind)
-├─ package.json
-└─ README.md
+   ├─ app/
+   │  ├─ dashboard/
+   │  │  └─ page.tsx       # Dashboard page
+   │  ├─ login/
+   │  │  └─ page.tsx       # Login page
+   │  └─ layout.tsx        # Global layout
+   ├─ components/          # UI components (Input, Button, etc.)
+   ├─ lib/                 # Utility functions (validators)
+   ├─ public/              # Static assets (images, favicon)
+   ├─ styles/              # Global styles (Tailwind)
+   ├─ package.json
+   └─ README.md
 
 6. Technical Details:
-
+   
   Framework: Next.js (App Router)
 
   Language: TypeScript
